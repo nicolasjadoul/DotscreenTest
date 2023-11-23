@@ -66,7 +66,7 @@ struct Board: View {
     
     func play(col: Int, row: Int) {
             if (board[row][col] == 0) 
-                && ((board[0][0] != 0))
+                //&& ((board[row + 1][col] != 0))
         {
                 board[row][col] = currentPlayer
                 switchPlayer()
