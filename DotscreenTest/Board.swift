@@ -65,12 +65,17 @@ struct Board: View {
     }
     
     func play(col: Int, row: Int) {
-            if (board[row][col] == 0) 
-                //&& ((board[row + 1][col] != 0))
-        {
+        if row + 1 < rows {
+            if (board[row][col] == 0) && ((board[row + 1][col] != 0))
+            {
                 board[row][col] = currentPlayer
                 switchPlayer()
                 checkWin()
+            }
+        } else {
+            board[row][col] = currentPlayer
+            switchPlayer()
+            checkWin()
         }
     }
     
