@@ -11,7 +11,7 @@ import SwiftUI
 struct DotscreenTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Board()
         }
     }
 }
