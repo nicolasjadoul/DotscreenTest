@@ -9,7 +9,14 @@ import SwiftUI
 
 struct YellowPiece: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Rectangle()
+                .fill(.blue)
+                .frame(width: 50, height: 50)
+            Circle()
+                .fill(.yellow)
+                .frame(width: 40, height: 40)
+        }
     }
 }
 

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SwiftUIView: View {
+struct RedPiece: View {
     var body: some View {
         ZStack {
             Rectangle()
@@ -21,5 +21,5 @@ struct SwiftUIView: View {
 }
 
 #Preview {
-    SwiftUIView()
+    RedPiece()
 }
